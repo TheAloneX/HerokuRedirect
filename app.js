@@ -3,9 +3,9 @@
 function getInputValue() {
     var inputVal = document.getElementById('myInput').value;
     if (inputVal == '') {
-        return alert('Provide Your Github Repo Link!');
+        return alert('Give Your Github Repo Link!');
     }
-    if (inputVal.includes('szsupunma')) {
+    if (inputVal.includes('itzalonex')) {
         return alert(
             "You Can't Deploy Official Repo As It Has Been Blacklisted By Heroku. Simply Fork The Repo & Then Input Your Forked Repo Link Here!",
         );
@@ -15,7 +15,7 @@ function getInputValue() {
             herokulink = her.concat(inputVal);
             window.open(herokulink, 'blank');
         } else {
-            return alert('Input Github Link Starting with https only!');
+            return alert('Input Github Link Starts with https only!');
         }
     }
 }
